@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <string>
 #include <sstream>
+#include "funcao.h"
 using namespace std;
 
 char menu(int n){
@@ -38,7 +39,7 @@ char menu(int n){
     }
    return escolha;
 }
-//lê um conjunto de qualquer tamanho
+
 vector<int> leitura(){
     vector<int> conjunto;
     string leu;

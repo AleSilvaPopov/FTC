@@ -26,7 +26,30 @@ int main(){
                 imprime(diferenca(conjunto1, conjunto2));
         }
         else if(opcao == '2'){
+            cout << "Insira o conjunto: ";
+            vector<int> conjunto = leitura();
+            cout << "Insira a relação: ";
+            vector<int> relacao = leitura();
 
+            bool flag = true;
+
+            if(reflexiva(conjunto, relacao)){
+                cout << "A relação é REFLEXIVA\n";
+                flag = false;
+            }
+            
+            if(simetrica(relacao)){
+                cout << "A relação é SIMÉTRICA\n";
+                flag = false;
+            }
+            
+            if(transitiva(relacao)){
+                cout << "A relação é TRANSITIVA\n";
+                flag = false;
+            }
+
+            if(flag)
+                cout << "Nenhuma das três relações foi encontrada.\n";
         }
         else{
             cout << "Encerrando o programa, Obrigado!\n";
