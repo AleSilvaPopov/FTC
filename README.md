@@ -40,8 +40,8 @@ O programa deve primeiro ler o conjunto e, em seguida, a relação que será ana
 
 1.  **Clone o repositório (se aplicável):**
     ```bash
-    git clone [https://github.com/AleSilvaPopov/FTC]
-    cd [FTC]
+    git clone https://github.com/AleSilvaPopov/FTC
+    cd FTC
     ```
 
 2.  **Compile os arquivos (exemplo usando `gcc`):**
